@@ -1,0 +1,25 @@
+body{
+    background:#E2E8F0!important;
+    margin-top:20px;
+    color: #616f80;
+}
+.card {
+    border: none;
+    margin-bottom: 24px;
+    -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+}
+
+.avatar-xs {
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+.titulo{
+    color: #0487D9;
+    font-size: 20px;
+
+}
+.btn{
+    padding: 100px;
+}
