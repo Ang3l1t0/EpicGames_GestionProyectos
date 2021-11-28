@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="report.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Epic Games</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="#">Epic</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="Home.html">Inicio</a>
+                  </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Report.html">Informe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CreateProject.html">Crear Proyecto</a>   
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Cerrar Sesión</a>
+          </li>
+        </ul>
+
+      </nav>
+    <br/>
+
+    <br/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-pattern">
+                <div class="card-body">
+                    <div class="float-right">
+                        <i class="fa fa-archive text-primary h4 ml-3"></i>
+                    </div>
+                    <h5 class="font-size-20 mt-0 pt-1">20</h5>
+                    <p class="text-muted mb-0">Total de proyectos</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-pattern">
+                <div class="card-body">
+                    <div class="float-right">
+                        <i class="fa fa-th text-primary h4 ml-3"></i>
+                    </div>
+                    <h5 class="font-size-20 mt-0 pt-1">21</h5>
+                    <p class="text-muted mb-0">Completados</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-pattern">
+                <div class="card-body">
+                    <div class="float-right">
+                        <i class="fa fa-file text-primary h4 ml-3"></i>
+                    </div>
+                    <h5 class="font-size-20 mt-0 pt-1">08</h5>
+                    <p class="text-muted mb-0">Iniciados</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group mb-0">
+                            <label>Buscar</label>
+                            <div class="input-group mb-0">
+                                <input type="text" class="form-control" placeholder="Buscar..." aria-describedby="project-search-addon" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-danger" type="button" id="project-search-addon"><i class="fa fa-search search-icon font-12"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end row -->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive project-list">
+                        <table class="table project-table table-centered table-nowrap">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Projecto</th>
+                                    <th scope="col">Fecha de inicio</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Horas de proyecto</th>
+                                    <th scope="col">Horas reportadas</th>
+                                    <th scope="col">Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Creación de juego</td>
+                                    <td>02/5/2019</td>
+                                    <td>
+                                        <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                    </td>
+                                    <td>120</td>
+
+                                    <td>70</td>
+
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Creación de juego</td>
+                                        <td>02/5/2019</td>
+                                        <td>
+                                            <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                        </td>
+                                        <td>120</td>
+    
+                                        <td>70</td>
+    
+    
+                                        <td>
+                                            <div class="action">
+                                                <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                                <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa-remove h5 m-0"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Creación de juego</td>
+                                        <td>02/5/2019</td>
+                                        <td>
+                                            <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                        </td>
+                                        <td>120</td>
+    
+                                        <td>70</td>
+    
+    
+                                        <td>
+                                            <div class="action">
+                                                <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                                <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa-remove h5 m-0"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Creación de juego</td>
+                                        <td>02/5/2019</td>
+                                        <td>
+                                            <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                        </td>
+                                        <td>120</td>
+    
+                                        <td>70</td>
+    
+    
+                                        <td>
+                                            <div class="action">
+                                                <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                                <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa-remove h5 m-0"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Creación de juego</td>
+                                        <td>02/5/2019</td>
+                                        <td>
+                                            <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                        </td>
+                                        <td>120</td>
+    
+                                        <td>70</td>
+    
+    
+                                        <td>
+                                            <div class="action">
+                                                <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                                <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa-remove h5 m-0"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Creación de juego</td>
+                                        <td>02/5/2019</td>
+                                        <td>
+                                            <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                        </td>
+                                        <td>120</td>
+    
+                                        <td>70</td>
+    
+    
+                                        <td>
+                                            <div class="action">
+                                                <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                                <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa-remove h5 m-0"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Creación de juego</td>
+                                        <td>02/5/2019</td>
+                                        <td>
+                                            <span class="text-primary font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Iniciado</span>
+                                        </td>
+                                        <td>120</td>
+    
+                                        <td>70</td>
+    
+    
+                                        <td>
+                                            <div class="action">
+                                                <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                                <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa-remove h5 m-0"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- end project-list -->
+
+                    <div class="pt-3">
+                        <ul class="pagination justify-content-end mb-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end row -->
+</div>
+</body>
+</html>
