@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-const Login = () =>{
+const Login = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
 
-  return (  
+  return (
     <div className="login-container animated fadeInDown bootstrap snippets bootdeys">
       <div className="loginbox bg-white">
         <div className="loginbox-title">Inicio de Sesión</div>
@@ -24,14 +24,14 @@ const Login = () =>{
           />
         </div>
         <div className="loginbox-textbox">
-          <input 
-            type="text" 
-            className="form-control" 
+          <input
+            type="text"
+            className="form-control"
             id="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             placeholder="Contraseña"
-            />
+          />
         </div>
         <div className="loginbox-submit">
           <input
@@ -48,10 +48,8 @@ const Login = () =>{
         </div>
       </div>
     </div>
-  )
-}
-
-
+  );
+};
 
 const SearchParams = () => {
   const [location, setLocation] = useState("Colombia");
