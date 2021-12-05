@@ -1,5 +1,4 @@
 const Activities = (props) => {
-    
   const {
     nombre,
     startDate,

@@ -1,7 +1,6 @@
 const Participants = (props) => {
-
   const { number, name, hours } = props;
-  
+
   return (
     <tr>
       <td>{number}</td>

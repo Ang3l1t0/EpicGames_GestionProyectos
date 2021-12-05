@@ -6,7 +6,6 @@ import Navbar from "./Navbar";
 
 const Project = () => {
   return (
-      
     <div className="container">
       <div className="container-fluid p-0">
         <div className="row">
@@ -93,13 +92,17 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <ProjectInfo name="Proyecto de elaboración Juego Fortnite" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          <ProjectInfo
+            name="Proyecto de elaboración Juego Fortnite"
+            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua." startDate="10/11/2021"
-                  finishDate="10/9/2022"
-                  hours="20"
-                  reportedHours="20"
-                  status="Iniciado"/>
+                  aliqua."
+            startDate="10/11/2021"
+            finishDate="10/9/2022"
+            hours="20"
+            reportedHours="20"
+            status="Iniciado"
+          />
         </div>
       </div>
     </div>
