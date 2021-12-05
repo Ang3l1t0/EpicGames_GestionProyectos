@@ -1,10 +1,15 @@
 import { render } from "react-dom";
 import Login from "./Login";
+import Navbar from "./Navbar";
+import Project from "./Project";
 
 const App = () => {
   return (
     <div>
-      <Login />
+      <Navbar />
+      <br />
+      <br />
+      <Project />
     </div>
   );
 };
