@@ -180,7 +180,11 @@ const CreateAcivity = () => {
                                               <tbody>
                                                 {elements
                                                   .filter((e) =>
-                                                    e.name.toLowerCase().includes(nameSearch.toLowerCase())
+                                                    e.name
+                                                      .toLowerCase()
+                                                      .includes(
+                                                        nameSearch.toLowerCase()
+                                                      )
                                                   )
                                                   .map((e) => (
                                                     <tr>
