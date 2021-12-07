@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
 const CreateAcivity = () => {
+  let { project } = useParams();
+
   const [name, setName] = useState("");
   const [description, setDesciption] = useState("");
   const [startDate, setStartDate] = useState("");
@@ -26,7 +29,7 @@ const CreateAcivity = () => {
                     <div className="col d-flex flex-column flex-sm-row justify-content-between mb-3">
                       <div className="text-center text-sm-left mb-2 mb-sm-0">
                         <h4 className="pt-sm-2 pb-1 mb-0 text-nowrap">
-                          Creación de Actividad
+                          Creación de Actividad - Proyecto {project}
                         </h4>
                       </div>
                     </div>

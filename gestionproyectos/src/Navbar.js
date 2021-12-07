@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm bg-primary navbar-dark">
@@ -12,9 +14,9 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="Report.html">
+          <Link to="/project" className="nav-link">
             Informe
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="CreateProject.html">

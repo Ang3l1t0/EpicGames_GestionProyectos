@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import Activities from "./Activities";
 import Participants from "./Participants";
 import ProjectInfo from "./ProjectInfo";
 import Navbar from "./Navbar";
 
 const Project = () => {
+  let navigate = useNavigate();
   return (
     <div className="container">
       <div className="container-fluid p-0">
@@ -13,13 +15,14 @@ const Project = () => {
             <div className="card">
               <div className="card-header pb-0">
                 <div className="card-actions float-right btn">
-                  <a href="AddParticipant.html">
-                    <input
-                      type="button"
-                      className="btn btn-danger btn-sm"
-                      defaultValue="Agregar participante"
-                    />
-                  </a>
+                  <input
+                    type="button"
+                    className="btn btn-danger btn-sm"
+                    defaultValue="Agregar participante"
+                    onClick={() => {
+                      navigate("/activities/Crear_Juego_Fortnite");
+                    }}
+                  />
                 </div>
                 <h4 className="card-title mb-0 titulo">Participantes</h4>
               </div>
@@ -45,13 +48,14 @@ const Project = () => {
             <div className="card">
               <div className="card-header pb-0">
                 <div className="card-actions float-right btn">
-                  <a href="CreateActivity.html">
-                    <input
-                      type="button"
-                      className="btn btn-danger btn-sm"
-                      defaultValue="Agregar actividad"
-                    />
-                  </a>
+                  <input
+                    type="button"
+                    className="btn btn-danger btn-sm"
+                    defaultValue="Agregar actividad"
+                    onClick={() => {
+                      navigate("/activities/Crear_Juego_Fortnite");
+                    }}
+                  />
                 </div>
                 <h4 className="card-title mb-0 titulo">Actividades</h4>
               </div>
