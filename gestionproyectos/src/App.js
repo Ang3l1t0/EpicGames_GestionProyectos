@@ -1,28 +1,26 @@
-import React, { Component } from "react";
-import Navbar from "./components/Navbar";
-import User from "./components/User";
-import Projectinfo from "./components/Projectinfo";
+import { render } from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./Login";
+import Navbar from "./Navbar";
+import Project from "./Project";
+import CreateAcivity from "./CreateActivity";
+import ProjectSub from "./ProjectSub";
+import { createElement, StrictMode } from "react";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <div class="container">
-          <div class="main-body">
-            <div class="row">
-              <Navbar />
-              <User />
-              <div class="col-lg-8">
-                <Projectinfo />
-                <Projectinfo />
-                <Projectinfo />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
+const rootElement = document.getElementById("root");
 
-export default App;
+render(
+  <div>
+    <Router>
+      <Navbar />
+      <br />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/activities/:project" element={<CreateAcivity />} />
+        <Route path="/sub/project/" element={<ProjectSub />} />
+      </Routes>
+    </Router>
+  </div>,
+  rootElement
+);
