@@ -24,9 +24,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="">
+        <Link to="/" className="nav-link">
             Cerrar Sesión
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
