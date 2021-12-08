@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const CreateActivity = () => {
+const CreateProject = () => {
   let { project } = useParams();
 
   const [name, setName] = useState("");
@@ -235,4 +235,4 @@ const CreateActivity = () => {
   );
 };
 
-export default CreateActivity;
+export default CreateProject;

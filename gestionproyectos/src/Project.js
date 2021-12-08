@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import Activities from "./Activities";
-import Participants from "./Participants";
-import ProjectInfo from "./ProjectInfo";
-import Navbar from "./Navbar";
+import Activities from "./components/Activities";
+import Participants from "./components/Participants";
+import ProjectInfo from "./components/ProjectInfo";
+import Navbar from "./components/Navbar";
 
 const Project = () => {
   let navigate = useNavigate();
@@ -20,7 +20,7 @@ const Project = () => {
                     className="btn btn-danger btn-sm"
                     defaultValue="Agregar participante"
                     onClick={() => {
-                      navigate("/activities/Crear_Juego_Fortnite");
+                      navigate("/participant/Crear_Juego_Fortnite");
                     }}
                   />
                 </div>

@@ -1,5 +1,5 @@
-import ProjectInfo from "./ProjectInfo";
-import ActivitiesSub from "./ActivitiesSub";
+import ProjectInfo from "./components/ProjectInfo";
+import ActivitiesSub from "./components/ActivitiesSub";
 import { useState } from "react";
 
 const ProjectSub = () => {

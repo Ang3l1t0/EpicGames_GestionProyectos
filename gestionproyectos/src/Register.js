@@ -1,20 +1,30 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-
-const Login = () => {
-  const [password, setPassword] = useState("");
+const Register = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  let navigate = useNavigate();
+  const [password, setPassword] = useState("");
+  const [confPassword, setConfPassword] = useState("");
 
   return (
     <div className="login-container animated fadeInDown bootstrap snippets bootdeys">
       <div className="loginbox bg-white">
-        <div className="loginbox-title">Inicio de Sesión</div>
+        <div className="loginbox-title">Registro</div>
         <br />
         <br />
         <div className="loginbox-or">
           <div className="or-line" />
+        </div>
+        <div className="loginbox-textbox">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Nombre"
+            id="name"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+          />
         </div>
         <div className="loginbox-textbox">
           <input
@@ -36,20 +46,27 @@ const Login = () => {
             placeholder="Contraseña"
           />
         </div>
+        <div className="loginbox-textbox">
+          <input
+            type="text"
+            className="form-control"
+            id="confPassword"
+            onChange={(e) => setConfPassword(e.target.value)}
+            value={confPassword}
+            placeholder="Confirmar Contraseña"
+          />
+        </div>
         <div className="loginbox-submit">
           <input
             type="button"
             className="btn btn-primary btn-block"
-            defaultValue="Ingresar"
-            onClick={() => {
-              navigate("/home");
-            }}
+            defaultValue="Registrar"
           />
         </div>
         <div className="loginbox-signup">
           <p>
-            ¿No tienes cuenta?
-            <Link to="/register">Registrate</Link>
+            ¿Ya tienes cuenta?
+            <Link to="/">Iniciar Sesión</Link>
           </p>
         </div>
       </div>
@@ -57,4 +74,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

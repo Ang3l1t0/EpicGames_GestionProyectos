@@ -1,14 +1,9 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const CreateActivity = () => {
+const AddParticipant = () => {
   let { project } = useParams();
 
-  const [name, setName] = useState("");
-  const [description, setDesciption] = useState("");
-  const [startDate, setStartDate] = useState("");
-  const [finishDate, setFinishDate] = useState("");
-  const [estimatedHours, setEstimatedHours] = useState("");
   const [nameSearch, setNameSearch] = useState("");
 
   elements = [
@@ -25,113 +20,13 @@ const CreateActivity = () => {
             <div className="card">
               <div className="card-body">
                 <div className="e-profile">
-                  <div className="row">
-                    <div className="col d-flex flex-column flex-sm-row justify-content-between mb-3">
-                      <div className="text-center text-sm-left mb-2 mb-sm-0">
-                        <h4 className="pt-sm-2 pb-1 mb-0 text-nowrap">
-                          Creación de Actividad - Proyecto {project}
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <br />
-                  <br />
-                  <div className="tab-content pt-3">
-                    <div className="tab-pane active">
-                      <form className="form" noValidate>
-                        <div className="row">
-                          <div className="col">
-                            <div className="row">
-                              <div className="col">
-                                <div className="form-group">
-                                  <label>Nombre</label>
-                                  <input
-                                    className="form-control"
-                                    type="text"
-                                    placeholder="Nombre del proyecto"
-                                    onChange={(e) => setName(e.target.value)}
-                                    value={name}
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div className="row">
-                              <div className="col mb-3">
-                                <div className="form-group">
-                                  <label>Descripción</label>
-                                  <textarea
-                                    className="form-control"
-                                    rows={5}
-                                    placeholder="Descripción completa del proyecto"
-                                    onChange={(e) =>
-                                      setDesciption(e.target.value)
-                                    }
-                                    value={description}
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-12 col-sm-6 mb-3">
-                            <div className="row">
-                              <div className="col">
-                                <div className="form-group">
-                                  <label>Fecha de inicio</label>
-                                  <input
-                                    className="form-control"
-                                    type="text"
-                                    placeholder="DD/MM/AAAA"
-                                    onChange={(e) =>
-                                      setStartDate(e.target.value)
-                                    }
-                                    value={startDate}
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div className="row">
-                              <div className="col">
-                                <div className="form-group">
-                                  <label>Fecha de finalización</label>
-                                  <input
-                                    className="form-control"
-                                    type="text"
-                                    placeholder="DD/MM/AAAA"
-                                    onChange={(e) =>
-                                      setFinishDate(e.target.value)
-                                    }
-                                    value={finishDate}
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div className="row">
-                              <div className="col">
-                                <div className="form-group">
-                                  <label>Tiempo estimado </label>
-                                  <input
-                                    className="form-control"
-                                    type="text"
-                                    placeholder="en horas"
-                                    onChange={(e) =>
-                                      setEstimatedHours(e.target.value)
-                                    }
-                                    value={estimatedHours}
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                         <div className="row">
                           <div className="col mb-3">
                             <div className="form-group">
                               <div className="container">
                                 <div className="container-fluid p-0">
                                   <h1 className="h4 mb-3">
-                                    Asignar usuarios subordinados
+                                    Asignar usuarios subordinados - Proyecto {project}
                                   </h1>
                                   <br />
                                   <div className="container">
@@ -214,7 +109,7 @@ const CreateActivity = () => {
                                       className="btn btn-primary"
                                       type="submit"
                                     >
-                                      Crear Actividad
+                                      Asignar
                                     </button>
                                   </div>
                                 </div>
@@ -222,7 +117,6 @@ const CreateActivity = () => {
                             </div>
                           </div>
                         </div>
-                      </form>
                     </div>
                   </div>
                 </div>
@@ -230,9 +124,7 @@ const CreateActivity = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+   
   );
 };
-
-export default CreateActivity;
+export default AddParticipant;

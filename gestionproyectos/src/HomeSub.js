@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import User from "./components/User";
-import Projectinfo from "./components/ProjectCard";
-import ProjectCard from "./components/ProjectCard";
+import ProjectCardSub from "./components/ProjectCardSub";
 
-class Home extends Component {
+class HomeSub extends Component {
   render() {
     return (
       <div>
@@ -13,9 +12,9 @@ class Home extends Component {
             <div className="row">
               <User />
               <div className="col-lg-8">
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                <ProjectCardSub />
+                <ProjectCardSub />
+                <ProjectCardSub />
               </div>
             </div>
           </div>
@@ -25,4 +24,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default HomeSub;
